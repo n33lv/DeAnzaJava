@@ -63,7 +63,36 @@ public class Misc {
         int girls = in.nextInt();
         System.out.println("You entered the number " + girls);
         Challenges n = new Challenges();
-        double boysAndGirls = n.boysAndGirl(boys, girls);
+        n.boysAndGirl(boys, girls);
+    }
+    public void stockPrice() {
+        System.out.println("Please enter the number of Stocks that you would like to purchase.");
+        Scanner in = new Scanner(System.in);
+        double numOfStocks = in.nextDouble();
+        System.out.println("You entered the number: " + numOfStocks);
+        System.out.println("Next, what is the price of one stock?");
+        double priceOfStock = in.nextDouble();
+        System.out.println("You entered the number: " + priceOfStock);
+        Challenges n = new Challenges();
+        n.stockPrice(numOfStocks, priceOfStock);
+
+
+    }
+    public void customerChoosings() {
+        System.out.println("Enter the number of people who were surveyed.");
+        Scanner in = new Scanner(System.in);
+        int customersSurveyed = in.nextInt();
+        System.out.println("You entered the number: " + customersSurveyed);
+        Challenges n = new Challenges();
+        n.customerChoosings(customersSurveyed);
+    }
+    public void cookieIngredientsCalculator() {
+        System.out.println("Please enter the number of cookies that you would like to make");
+        Scanner in = new Scanner(System.in);
+        int numOfCookies = in.nextInt();
+        System.out.println("You entered the number: " + numOfCookies);
+        Challenges n = new Challenges();
+        n.cookieIngredientCalculator(numOfCookies);
     }
 
 }

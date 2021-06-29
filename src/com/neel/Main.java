@@ -39,14 +39,48 @@ public class Main {
 
         */
 
+        //I am running the programs from the other tabs from here. I will write all the lines needed to run the code, simply uncomment what you would like to run.
+        //Alternatively you can copy out the two lines such that they are no longer commented then run the program.
+       /*
+       Problem 1
 
         Misc x = new Misc();
-        //x.flowChartHelp();
+        x.testAverage();
+        --------------------------------
+        Problem 2
 
+         Misc x = new Misc();
+        x.circuitBoardProfit();
+        ---------------------------------
+        Problem 3
+
+        Misc x = new Misc();
         x.totalCostOfRestaurantBill();
-        //x.boysAndGirls();
+        ---------------------------------
+        Problem 4
+
+         Misc x = new Misc();
+        x.boysAndGirls();
+        -------------------------------
+        Problem 5
+
+           Misc x = new Misc();
+        x.stockPrice();
+        -------------------------------
+        Problem 6
+
+            Misc x = new Misc();
+        x.customerChoosings();
+        -------------------------------
+        Problem 7 (The Last One)
+
+         Misc x = new Misc();
+        x.cookieIngredientsCalculator();
+        --------------------------------
 
 
+
+        */
 
 
 
