@@ -94,5 +94,22 @@ public class Misc {
         Challenges n = new Challenges();
         n.cookieIngredientCalculator(numOfCookies);
     }
+    public void askUserForInfo() {
+        System.out.println("Please enter in your first name.");
+        Scanner in = new Scanner(System.in);
+        String firstName = in.next();
+        System.out.println("You entered: " + firstName + " as your first name.");
+        System.out.println("Please type in your last name.");
+        String lastName = in.next();
+        System.out.println("You entered: " + firstName + " as your last name");
+        System.out.println("What is your favourite City?");
+        String favouriteCity = in.next();
+        System.out.println("You entered: " + favouriteCity);
+        System.out.println("Thanks for the information!");
+        Challenges n = new Challenges();
+        n.askUserForInfo(firstName, lastName, favouriteCity);
+
+
+    }
 
 }

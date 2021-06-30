@@ -77,10 +77,11 @@ public class Main {
          Misc x = new Misc();
         x.cookieIngredientsCalculator();
         --------------------------------
-
-
-
         */
+
+
+        Misc x = new Misc();
+        x.askUserForInfo();
 
 
 

@@ -57,6 +57,14 @@ public class Challenges {
         System.out.println("You will need " + flour + " cups of flour.");
         return 0;
     }
+    public void askUserForInfo(String firstName, String lastName, String favouriteCity){
+        System.out.println("Your name is: " + firstName + lastName);
+         String name = firstName + lastName;
+         char firstInitial = name.charAt(0);
+         char lastInitial = lastName.charAt(0);
+        System.out.println("Your initials are: " + firstInitial + lastInitial);
+        System.out.println("There are " + name.length() + " characters in your name.");
+    }
 
 
 }
