@@ -109,7 +109,51 @@ public class Misc {
         Challenges n = new Challenges();
         n.askUserForInfo(firstName, lastName, favouriteCity);
 
+    }
+    public void convertCToF() {
+        System.out.println("Please enter in the tempreture in Celsuis");
+        Scanner in = new Scanner(System.in);
+        double celsuis = in.nextDouble();
+        System.out.println("You entered: " + celsuis);
+        Challenges n = new Challenges();
+        n.convertCToF(celsuis);
 
     }
+    public void numCompare(double a, double b) {
+        System.out.println("We will compare two numbers for you. The first number, known as A, and the second one known as B.");
+        System.out.println("Enter the required values and let the magic happen!");
+        Scanner in = new Scanner(System.in);
+        a = in.nextDouble();
+        System.out.println("You entered: " + a);
+        b = in.nextDouble();
+        System.out.println("You entered: " + b);
+        in.close();
+        if (a > b) {
+            System.out.println("Number a is greater than number B.");
+        } else if (a < b) {
+            System.out.println("Number B is greater than number A");
+        } else if (a == b) {
+            System.out.println("Number B and A are equal.");
+        }
+
+    }
+
+    public void numSmallest(double a, double b) {
+        System.out.println("We will compare two numbers and return the smallest one. Type in your values, a and b!");
+        Scanner in = new Scanner(System.in);
+        System.out.println("Please enter your value for number A.");
+        a = in.nextDouble();
+        System.out.println("You entered: " + a);
+        b = in.nextDouble();
+        System.out.println("You entered: " + b);
+        in.close();
+        if (a == b) {
+            System.out.println("The two numbers are equal!");
+        }
+        System.out.println("The smallest of the two numbers is " + Math.min(a, b));
+    }
+
+
+
 
 }

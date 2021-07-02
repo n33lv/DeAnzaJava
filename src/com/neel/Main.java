@@ -1,5 +1,5 @@
 package com.neel;
-
+import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
@@ -80,9 +80,8 @@ public class Main {
         */
 
 
-        Misc x = new Misc();
-        x.askUserForInfo();
-
+       Misc x = new Misc();
+        x.numSmallest(20,4);
 
 
 

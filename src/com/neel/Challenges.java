@@ -1,5 +1,7 @@
 package com.neel;
 
+import java.util.Scanner;
+
 public class Challenges {
     public double testAverage(double score1, double score2, double score3) {
         double testMean = (score1 + score2 + score3)/3;
@@ -64,7 +66,20 @@ public class Challenges {
          char lastInitial = lastName.charAt(0);
         System.out.println("Your initials are: " + firstInitial + lastInitial);
         System.out.println("There are " + name.length() + " characters in your name.");
+
+
     }
+    public double convertCToF(double Celsuis) {
+        //(0°C × 9/5) + 32 = 32°F
+        //multiply the temperature in degrees Celsius by 2, and then add 30 to get the (estimated) temperature in degrees Fahrenheit.
+        double F = (Celsuis*2) + 30;
+        System.out.println(F);
+        System.out.println("That is the degree in Farenheight.");
+        return 0;
+
+    }
+
+
 
 
 }
