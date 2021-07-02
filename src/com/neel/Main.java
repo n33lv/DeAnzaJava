@@ -81,7 +81,7 @@ public class Main {
 
 
        Misc x = new Misc();
-        x.numSmallest(20,4);
+        x.evenOrOdd(20);
 
 
 

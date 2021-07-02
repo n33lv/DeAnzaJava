@@ -152,6 +152,19 @@ public class Misc {
         }
         System.out.println("The smallest of the two numbers is " + Math.min(a, b));
     }
+    public void evenOrOdd(double a) {
+        System.out.println("We will take one number and determine if the number is even or odd.");
+        Scanner in = new Scanner(System.in);
+        a = in.nextDouble();
+        System.out.println("You entered the value: " + a);
+        in.close();
+        if (a % 2 == 0) {
+            System.out.println("This number is even");
+        } else {
+            System.out.println("This number is odd.");
+        }
+
+    }
 
 
 
