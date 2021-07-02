@@ -81,7 +81,7 @@ public class Main {
 
 
        Misc x = new Misc();
-        x.evenOrOdd(20);
+        x.romanNumeralRepeat();
 
 
 

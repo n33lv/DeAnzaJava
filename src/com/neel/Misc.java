@@ -152,10 +152,10 @@ public class Misc {
         }
         System.out.println("The smallest of the two numbers is " + Math.min(a, b));
     }
-    public void evenOrOdd(double a) {
+    public void evenOrOdd() {
         System.out.println("We will take one number and determine if the number is even or odd.");
         Scanner in = new Scanner(System.in);
-        a = in.nextDouble();
+        double a = in.nextDouble();
         System.out.println("You entered the value: " + a);
         in.close();
         if (a % 2 == 0) {
@@ -165,6 +165,54 @@ public class Misc {
         }
 
     }
+    public void romanNumeralConversion() {
+        System.out.println("You may enter numbers 1 through 10 inclusive and have it converted into a roman numeral.");
+        Scanner in = new Scanner(System.in);
+        int a = in.nextInt();
+        System.out.println("You entered: " + a);
+        switch (a){
+            case 1:
+                System.out.println("The roman numeral of this number is: I ");
+                break;
+            case 2:
+                System.out.println("The roman numeral of this number is: II ");
+                break;
+            case 3:
+                System.out.println("The roman numeral of this number is: III ");
+                break;
+            case 4:
+                System.out.println("The roman numeral of this number is: IV ");
+                break;
+            case 5:
+                System.out.println("The roman numeral of this number is: V ");
+                break;
+            case 6:
+                System.out.println("The roman numeral of this number is: VI ");
+                break;
+            case 7:
+                System.out.println("The roman numeral of this number is: VII ");
+                break;
+            case 8:
+                System.out.println("The roman numeral of this number is: VIII ");
+                break;
+            case 9:
+                System.out.println("The roman numeral of this number is: IX ");
+                break;
+            case 10:
+                System.out.println("The roman numeral of this number is: X ");
+                break;
+            default:
+                System.out.println("This value is not in the range of 1 through 10!");
+        }
+        //in.next();
+
+    }
+    public void romanNumeralRepeat() {
+        while (true) {
+            romanNumeralConversion();
+        }
+    }
+
 
 
 
