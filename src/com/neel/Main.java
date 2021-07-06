@@ -80,9 +80,8 @@ public class Main {
         */
 
 
-       Misc x = new Misc();
-        x.romanNumeralRepeat();
-
+       Challenges x = new Challenges();
+       x.testAverage();
 
 
 

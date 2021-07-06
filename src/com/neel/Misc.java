@@ -26,18 +26,8 @@ public class Misc {
         return 0;
     }
 
-    public void testAverage() {
-        System.out.println("Enter the three test values.");
-        Scanner in = new Scanner(System.in);
-        double score1 = in.nextDouble();
-        System.out.println("You entered the number " + score1);
-        double score2 = in.nextDouble();
-        System.out.println("You entered the number " + score2);
-        double score3 = in.nextDouble();
-        System.out.println("You entered the number " + score3);
-        Challenges n = new Challenges();
-        double testAverage = n.testAverage(score1, score2, score3);
-    }
+
+
     public void circuitBoardProfit() {
         System.out.println("Enter the retail price of the circuit board.");
         Scanner in = new Scanner(System.in);
@@ -212,6 +202,9 @@ public class Misc {
             romanNumeralConversion();
         }
     }
+
+
+
 
 
 
