@@ -3,10 +3,36 @@ package com.neel;
 import java.util.Scanner;
 
 public class Challenges {
-    public double testAverage(double score1, double score2, double score3) {
+    public double testAverage() {
+        double score1;
+        double score2;
+        double score3;
+        System.out.println("Enter the three test values.");
+        Scanner in = new Scanner(System.in);
+        score1 = in.nextDouble();
+        System.out.println("You entered the number " + score1);
+        score2 = in.nextDouble();
+        System.out.println("You entered the number " + score2);
+        score3 = in.nextDouble();
+        System.out.println("You entered the number " + score3);
         double testMean = (score1 + score2 + score3)/3;
         System.out.println("The average value of the test scores is: " + testMean);
+        if (testMean <= 65) {
+            System.out.println("The class has failed.");
+            return 0;
+        } else if (testMean >= 75 && testMean < 85) {
+            System.out.println("The class recieves a C.");
+            return 0;
+        } else if (testMean >= 85 && testMean < 95) {
+            System.out.println("The class recieves a B.");
+            return 0;
+        } else if (testMean >= 95) {
+            System.out.println("The class receives an A!");
+            return 0;
+        }
         return 0;
+
+
     }
     public double circuitBoardProfit(double retailPriceOfCircutBoard) {
         //profit = Retail price * 0.4
@@ -78,6 +104,9 @@ public class Challenges {
         return 0;
 
     }
+
+
+
 
 
 
