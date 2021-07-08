@@ -161,8 +161,8 @@ public class Challenges {
             return 0;
         } else {
             System.out.println("This command is not acceptable!");
+            return 0;
         }
-        return 0;
     }
 
 
