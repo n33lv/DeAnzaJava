@@ -81,7 +81,7 @@ public class Main {
 
 
        Challenges x = new Challenges();
-       x.testAverage();
+       x.operationCalc();
 
 
 

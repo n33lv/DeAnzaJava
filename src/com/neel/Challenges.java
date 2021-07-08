@@ -104,6 +104,66 @@ public class Challenges {
         return 0;
 
     }
+    public double operationCalc() {
+        System.out.println("In this calculator you will be able to add, subtract, multpily, divide, and do Mod Division.");
+        System.out.println("Type in what you would like to do. Add, Subtract, multiply, divide, Mod Division");
+        Scanner in = new Scanner(System.in);
+        String command = in.nextLine();
+        if (command.equalsIgnoreCase("add")) {
+            System.out.println("Lets add! Enter the first number.");
+            double x = in.nextDouble();
+            System.out.println("You entered: " + x);
+            System.out.println("Enter the next number.");
+            double y = in.nextDouble();
+            System.out.println("You entered: " + y);
+            double z = x + y;
+            System.out.println(x + " + " + y + " is: " + z);
+            return 0;
+        } else if (command.equalsIgnoreCase("subtract")) {
+            System.out.println("Lets subtract! Enter the first number.");
+            double x = in.nextDouble();
+            System.out.println("You entered: " + x);
+            System.out.println("Enter the next number.");
+            double y = in.nextDouble();
+            System.out.println("You entered: " + y);
+            double z = x - y;
+            System.out.println(x + " - " + y + " is: " + z);
+            return 0;
+        } else if (command.equalsIgnoreCase("multiply")){
+            System.out.println("Lets multiply! Enter the first number.");
+            double x = in.nextDouble();
+            System.out.println("You entered: " + x);
+            System.out.println("Enter the next number.");
+            double y = in.nextDouble();
+            System.out.println("You entered: " + y);
+            double z = x * y;
+            System.out.println(x + " * " + y + " is: " + z);
+            return 0;
+        } else if (command.equalsIgnoreCase("divide")) {
+            System.out.println("Lets divide! Enter the first number.");
+            double x = in.nextDouble();
+            System.out.println("You entered: " + x);
+            System.out.println("Enter the next number.");
+            double y = in.nextDouble();
+            System.out.println("You entered: " + y);
+            double z = x/y;
+            System.out.println(x + " / " + y + " is: " + z);
+            return 0;
+        } else if (command.equalsIgnoreCase("Mod division")) {
+            System.out.println("Lets Mod Divide! Enter the first number.");
+            double x = in.nextDouble();
+            System.out.println("You entered: " + x);
+            System.out.println("Enter the next number.");
+            double y = in.nextDouble();
+            System.out.println("You entered: " + y);
+            double z = x % y;
+            System.out.println(x + " % " + y + " is: " + z);
+            return 0;
+        } else {
+            System.out.println("This command is not acceptable!");
+        }
+        return 0;
+    }
 //testing
 
 

@@ -202,6 +202,31 @@ public class Misc {
             romanNumeralConversion();
         }
     }
+    public double greatestNum3(double a, double b, double c) {
+        if(a>b) {
+            if (a==c){
+                System.out.println("The greatest numbers are: " + a + " and " + c);
+                return 0;
+            } else {
+                System.out.println("The greatest number is " + Math.max(a,c));
+                return 0;
+            }
+        } else if (a==b) {
+            if (a==c) {
+                System.out.println("All of the numbers are equal!");
+                return 0;
+            } else {
+                System.out.println("The greatest number is " + Math.max(a,c));
+                return 0;
+            }
+        } else if (a<b) {
+            if (b!=c) {
+                System.out.println("The greatest number is " + Math.max(b, c));
+            }
+        }
+        return 0;
+
+    }
 
 
 
