@@ -80,8 +80,9 @@ public class Main {
         */
 
 
-       Challenges x = new Challenges();
-       x.operationCalc();
+       //Challenges x = new Challenges();
+        Misc x = new Misc();
+       x.LoanQualifier();
 
 
 

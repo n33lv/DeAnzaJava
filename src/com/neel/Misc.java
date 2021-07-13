@@ -228,6 +228,23 @@ public class Misc {
 
     }
 
+    public void LoanQualifier() {
+        System.out.println("Enter the number of years that you have worked.");
+        Scanner in = new Scanner(System.in);
+        int yrsWorked = in.nextInt();
+        System.out.println("You entered: " + yrsWorked);
+        System.out.println("Enter your salary.");
+        long salary = in.nextLong();
+        System.out.println("You entered: " + salary);
+        in.close();
+        System.out.println("Calculating eligibilty for loan");
+        System.out.println("...");
+        System.out.println("...");
+        System.out.println("...");
+        Challenges n = new Challenges();
+        n.LoanQualifier(yrsWorked, salary);
+    }
+
 
 
 

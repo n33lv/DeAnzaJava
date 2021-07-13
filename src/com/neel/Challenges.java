@@ -164,6 +164,15 @@ public class Challenges {
             return 0;
         }
     }
+    public void LoanQualifier(int yrsWorked, long salary) {
+        if (yrsWorked > 2 && salary > 2) {
+            System.out.println("You are eligible for a loan.");
+
+        } else {
+            System.out.println("You are not eligible for a loan.");
+        }
+
+    }
 
 
 
