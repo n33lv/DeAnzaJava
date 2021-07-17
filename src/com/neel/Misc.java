@@ -245,6 +245,85 @@ public class Misc {
         n.LoanQualifier(yrsWorked, salary);
     }
 
+    //TODO: Make a function, "Login," in there you will be asked to store a username and password. They will either say save or exit.
+    //TODO: Save means that they will save the names. Exit means they will restart. Various information can be shown after.
+    //TODO: Then if "exit" is read from the console, then the program will stop and simply ask for the username.
+    //TODO: If the correct username is entered (The one that was previously saved,) along with the password, it will be able to pull up the various
+    //TODO: information again.
+    public void Login() {
+        System.out.println("Create Your Account!");
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter your username.");
+        String username = in.nextLine();
+        System.out.println("You entered: " + username);
+        System.out.println("Enter your password.");
+        String password = in.nextLine();
+
+        System.out.println("You entered: " + password);
+        System.out.println("Congrats! You have set up an account! Your information will be shown here. Type Menu to go back to the home page.");
+        System.out.println("Type something to display your information.");
+
+        // various info
+        System.out.println("Name: Neel");
+        System.out.println("Date of birth: Unknown");
+        System.out.println("Favorite color: black");
+        System.out.println("No more information has been registered.");
+
+
+        while (true) {
+            System.out.println("Type Menu to log out.");
+            String command = in.nextLine();
+            if (command.equalsIgnoreCase("Menu")) {
+                System.out.println("Home Page");
+                System.out.println("Enter your username.");
+                command = in.nextLine();
+                if (command.equalsIgnoreCase(username)) {
+                    System.out.println("Please enter your password");
+                    command = in.nextLine();
+                    if (command.equalsIgnoreCase(password)) {
+                        System.out.println("Correct Username and Password.");
+                        System.out.println("Name: Neel");
+                        System.out.println("Date of birth: Unknown");
+                        System.out.println("Favorite color: black");
+                        System.out.println("No more information has been registered.");
+                    } else {
+                        System.out.println("Incorrect password.");
+                    }
+
+                } else {
+                    System.out.println("Incorrect username.");
+                }
+
+            } else {
+                System.out.println("Unknown command. Please type \"Menu\" to log out.");
+            }
+        }
+
+
+
+
+/*
+        public void LoginTry() {
+            Scanner in = new Scanner(System.in);
+            System.out.println("Home Page");
+            System.out.println("Enter your username.");
+        }
+
+ */
+
+
+
+    }
+
+    public void variousInfo() {
+        System.out.println("Name: Neel");
+        System.out.println("Date of birth: Unknown");
+        System.out.println("Favorite color: black");
+        System.out.println("No more information has been registered.");
+    }
+
+
+
 
 
 

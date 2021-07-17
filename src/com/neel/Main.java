@@ -82,8 +82,7 @@ public class Main {
 
        //Challenges x = new Challenges();
         Misc x = new Misc();
-       x.LoanQualifier();
-
+x.Login();
 
 
 
