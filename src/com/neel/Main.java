@@ -80,9 +80,11 @@ public class Main {
         */
 
 
-       //Challenges x = new Challenges();
-        Misc x = new Misc();
-x.Login();
+       Challenges x = new Challenges();
+       x.operationCalc();
+        //Misc x = new Misc();
+        //AssignmentQuizzes x = new AssignmentQuizzes();
+
 
 
 
